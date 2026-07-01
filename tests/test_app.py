@@ -22,4 +22,3 @@ def test_health(client):
     assert response.status_code == 200
     data = response.get_json()
     assert data["status"] == "healthy"
-    
